@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Lab10-AntonyHuayhua.Domain\Lab10-AntonyHuayhua.Domain.csproj" />
+    <ProjectReference Include="..\Lab10-AntonyHuayhua.Application\Lab10-AntonyHuayhua.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.13" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>Lab10_AntonyHuayhua.Infrastructure</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Adapters\Repositories\Implementation\UserRepository.cs">
+      <DependentUpon>UserRoleRepository.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

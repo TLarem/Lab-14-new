@@ -1,4 +1,4 @@
-# Lab10-LukasMelgar
+# Lab10-AntonyHuayhua
 
 Alumno: Lukas Antonio Melgar Casimiro.
 
@@ -11,12 +11,12 @@ Se conserva Unit of Work y BCrypt, que ya utilizaba el proyecto.
 
 1. La base local `support_tickets_db` ya existe y se verifico con el usuario `postgres`. No volver a importar el SQL sobre sus tablas.
 2. Ajustar `ConnectionStrings:DefaultConnection` en
-   `Lab10-LukasMelgar.Api/appsettings.json` con la base y credenciales locales.
+   `Lab10-AntonyHuayhua.Api/appsettings.json` con la base y credenciales locales.
 3. Desde esta carpeta:
 
 ```powershell
 dotnet build
-dotnet run --project .\Lab10-LukasMelgar.Api --launch-profile http
+dotnet run --project .\Lab10-AntonyHuayhua.Api --launch-profile http
 ```
 
 Swagger: http://localhost:5236/swagger

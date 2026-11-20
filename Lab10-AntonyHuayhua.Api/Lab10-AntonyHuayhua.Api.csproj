@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Lab10_AntonyHuayhua.Api</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.13" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lab10-AntonyHuayhua.Domain\Lab10-AntonyHuayhua.Domain.csproj" />
+    <ProjectReference Include="..\Lab10-AntonyHuayhua.Application\Lab10-AntonyHuayhua.Application.csproj" />
+    <ProjectReference Include="..\Lab10-AntonyHuayhua.Infrastructure\Lab10-AntonyHuayhua.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

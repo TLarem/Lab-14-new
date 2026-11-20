@@ -1,4 +1,4 @@
-# Pruebas de Lab10-LukasMelgar
+# Pruebas de Lab10-AntonyHuayhua
 
 1. Preparar PostgreSQL seg?n README.md y ejecutar la API.
 2. En Swagger, POST /api/auth/register con:
